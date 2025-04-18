@@ -11,7 +11,7 @@ async def schedule_message_deletion(client: Client, file_uuid: str, chat_id: int
         await client.send_message(
             chat_id=chat_id,
             text=(
-                "🚫 **Your video/file was successfully deleted ✅**"
+                " **Your video/file was successfully deleted ✅**"
              )
         )
         for msg_id in message_ids:
